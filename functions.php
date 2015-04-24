@@ -9,6 +9,6 @@ add_action( 'wp_enqueue_scripts', 'err_scripts_styles' );
 // Actions to happen on init
 function err_init_actions() {
 	// Add publicize support to the recipe post type
-	add_post_type_support( 'recipes', 'publicize' );
+	add_post_type_support( 'recipe', 'publicize' );
 }
 add_action( 'init', 'err_init_actions' );
